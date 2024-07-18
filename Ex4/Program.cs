@@ -4,9 +4,7 @@ class Program{
     static void Main(){
         List<double> list = [ 1.5, 2.3, 4.7, 6.8, 9.1];
         
-        double find = list.Find(x => x == 4.7);
-
-        if (find == 4.7){
+        if (list.Exists(x => x == 4.7)){
             Console.WriteLine("O número esta presente na lista!");
         }else{
             System.Console.WriteLine("Este número não está nesta lista!");
